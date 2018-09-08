@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Personal Dashboard</title>
+    <meta name="viewport" content="width=device-width">
     <script src=""></script>
     <script type="text/javascript">
 
