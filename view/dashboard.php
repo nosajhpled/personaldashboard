@@ -25,7 +25,7 @@
 </div>
 
 <div class="block">
-<span class="blockText">Weight</span>
+<a href="bodyweight" /><span class="blockText">Body Weight</span></a>
 </div>
 
 <div class="block">
