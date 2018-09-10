@@ -21,7 +21,7 @@ form {text-align: center;}
 <form method="post">
   <h3>Body Weight</h3>
   <a class="returnButton" href="dashboard">Return to Dashboard</a><br><br>
-<input type="number" class="fillInNumber" name="bodyweight" id="bodyweight" /> Weight
+<input type="text" class="fillInNumber" name="bodyweight" id="bodyweight" /> Weight
 
 <br><br>
 <input type="submit" class="submit" />
