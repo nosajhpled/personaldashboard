@@ -32,7 +32,7 @@ table td {border:1px solid black; padding: 5px;}
 <br><br>
 
 <table>
-  <tr><th>Date</th><th>Body Weight</th><th>Body Fat %</th><th>Weight<br>Gain/Loss</th><th>Body Fat</th><th>Body Fat<br>Gain Loss</th></tr>
+  <tr><th>Date</th><th>Weight</th><th>Body Fat</th></tr>
   <?php
     if (isset($data['bodyweight'])) {
     $dataSet = $data['bodyweight'];
@@ -54,11 +54,14 @@ table td {border:1px solid black; padding: 5px;}
     {
       echo '<tr>
       <td>'.$row['datetime'].'</td>
-      <td>'.$row['weight'].'</td>
-      <td>'.(isset($row['fatpercent']) ? $row['fatpercent'] : 0).'</td>
-      <td>'.round($row['gainloss']['weight'],2).'</td>
-      <td>'.(isset($row['fatpercent']) ? $row['weight']*($row['fatpercent']/100) : 0).'</td>
-      <td>'.round($row['gainloss']['fatpercent'],2).'</td>
+      <td>Weight:'.$row['weight'].'<br>G/L:'.round($row['gainloss']['weight'],2).'</td>
+      <td>BF%:'.(isset($row['fatpercent']) ? $row['fatpercent'] : 0)
+      .'<br>BF:'.
+      (isset($row['fatpercent']) ? $row['weight']*($row['fatpercent']/100) : 0)
+      .'<br>G/L:'.
+      round($row['gainloss']['fatpercent'],2).
+      '</td>
+
       </tr>';
 
     }
