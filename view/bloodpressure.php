@@ -11,7 +11,6 @@
 body{font-size: 20px;}
 .content {padding-top: 5px; width:350px;margin: auto;}
 table td {border:1px solid black; padding: 5px;}
-form {text-align: center;}
 .returnButton{text-decoration: none; border: 1px solid black;padding: 5px; color: white; background-color: grey;}
 .bpNormal{background-color: #A3BC47}
 .bpElevated{background-color: #FEDB55}

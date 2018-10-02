@@ -20,7 +20,7 @@ Class Bodyweight extends Controller
     $form = new Form();
     $jsonDB = new JsonDB();
 
-    $formCheck = array("systolic"=>"bodyweight");
+    $formCheck = array("bodyweight"=>"required","fatper"=>"required");
 
     if (!$form->FormCheck($formCheck,$post))
     {
@@ -33,7 +33,8 @@ Class Bodyweight extends Controller
             'bodyweight',
             array(
                 "datetime"=>date("Y-m-d H:i:s"),
-                "weight"=>$post['bodyweight']
+                "weight"=>$post['bodyweight'],
+                "fatpercent"=>$post['fatpercent'],
                 )
               );
 
