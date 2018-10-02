@@ -7,8 +7,8 @@
     <link rel="stylesheet" type="text/css" href="">
     <style>
 
-    .block{width: 200px;
-      height:200px;
+    .block{width: 175px;
+      height:175px;
       border: 1px solid black;
       margin: 5px;
       float: left;
@@ -18,7 +18,7 @@
     a:link{color: black;}
     a:visited{color: black;}
 
-    .blockText{height: 200px; width: 200px;display: table-cell;text-align: center;
+    .blockText{height: 175px; width: 175px;display: table-cell;text-align: center;
     vertical-align: middle;}
     #bloodpressure {background-color: red;}
     #bodyweight{background-color: grey;}
